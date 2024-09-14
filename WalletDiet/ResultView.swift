@@ -7,7 +7,7 @@ protocol PaymentCaculateProtocol {
 struct ResultView: View {  // 結果画面の定義
     @Environment(\.presentationMode) var presentationMode  // 画面を閉じるための変数
     
-    let calculator: PaymentCaculateProtocol = DummyPaymentCalculate()
+    let calculator: PaymentCaculateProtocol = PaymentCalculate()
     let paymentAmount: Int
     @State var patterns: [PaymentPattern] = []
     
