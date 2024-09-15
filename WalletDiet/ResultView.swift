@@ -38,10 +38,10 @@ struct ResultView: View {  // 結果画面の定義
                 List{
                     ForEach(patterns) { pattern in
                         HStack {
-                            Text("\(pattern.change)円支払い")
+                            Text("\(pattern.payment)円支払い")
                                 .font(.title3)
                             
-                            Text("お釣り\(pattern.payment)円")
+                            Text("お釣り\(pattern.change)円")
                                 .font(.title3)
                         }//HStach
                     }//ForEach
